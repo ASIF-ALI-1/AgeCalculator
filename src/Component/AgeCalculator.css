@@ -1,0 +1,102 @@
+body{
+    background-color: #4b6cb7;
+}
+
+
+.container{
+    text-align: center;
+    background-color: white;
+    border: 2px solid #4b6cb7;
+    border-radius: 22px;
+    height: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+input[type="date"]{
+    background: #F4F9FF;
+    border: 2px solid #DEDEDE;
+    padding: 20px;
+    font-family: "Roboto Mono",monospace;
+    color: #000000;
+    font-size: 18px;
+    width: 230px;
+    /* border: none; */
+    outline: none;
+    border-radius: 5px;
+    /* margin: 5px; */
+    padding-left: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    /* background-color: #ffffff; */
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* From Uiverse.io by nikk7007 */ 
+.btn {
+    margin-top: 15px;
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    /* padding: 0.8em 1.75em; */
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    padding: 20px;
+    margin: 15px;
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
