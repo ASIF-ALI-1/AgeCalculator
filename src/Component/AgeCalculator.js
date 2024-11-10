@@ -60,8 +60,8 @@ const AgeCalculator = () => {
       <button className="btn" onClick={resetCalculator}> Reset </button>
       
       {age && (
-        <p className="">
-          Your age is: <span className="">{age}</span>
+        <p className=".age_heading">
+          Your age is: <span className="age_heading">{age}</span>
           <h1 className='age_heading'>{age > 0 ? ` ${age}` : ''}</h1>
         </p>
       )}
